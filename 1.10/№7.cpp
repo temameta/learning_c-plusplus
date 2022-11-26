@@ -9,10 +9,13 @@ int main()
     size_of_array = sizeof(arr)/sizeof(arr[0]);
     
     for (i; i<(size_of_array); i++) sum_1+=arr[i];
-    for (i = 0; i<(size_of_array); i++) {
+    
+    for (i = 0; i<(size_of_array); i++)
         if (arr[i] > (sum_1/size_of_array)) arr[i] = 1;
-    }
-    for (i = 0; i<(size_of_array); i++) sum_2+=arr[i];
+    
+    for (i = 0; i<(size_of_array); i++) 
+        sum_2+=arr[i];
+    
     cout << sum_2;
     return 0;
 }

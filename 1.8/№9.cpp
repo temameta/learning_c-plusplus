@@ -6,10 +6,9 @@ int main()
     int a, b;
     cin >> a;
     cin >> b;
-    while (a!=(b+1))
-    {
+    while (a!=(b+1)) {
         cout << a << endl;
-        a++;
+        a++; 
     }
     return 0;
 }

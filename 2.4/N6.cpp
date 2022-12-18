@@ -20,9 +20,7 @@ int main()
         return 0;
     }
 
-    while (!feof(f1)) {
-        fscanf(f1, "%c", &elem);
-        cout << elem << endl;
+    while (fscanf(f1, "%c", &elem) == 1) {
         fprintf(f2, "%c", *elem);
         if (elem == s)
             fprintf(f2, "%s", "\n");

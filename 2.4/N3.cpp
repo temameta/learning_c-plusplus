@@ -15,8 +15,7 @@ int main()
         return 0;
     }
 
-    while(!feof(f1)) {
-        fscanf(f1, "%d", &y);
+    while(fscanf(f1, "%d", &y) == 1) {
         arr[count] = y*2;
         count++;
     }

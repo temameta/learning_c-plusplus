@@ -18,8 +18,7 @@ int main()
         return 0;
     }
 
-    while (!feof(f)) {
-        fscanf(f, "%char", &elem);
+    while (fscanf(f, "%char", &elem) == 1) {
         if (elem == s) 
             count++;
     }

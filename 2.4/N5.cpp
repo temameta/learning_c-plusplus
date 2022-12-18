@@ -20,8 +20,7 @@ int main()
         return 0;
     }
 
-    while(!feof(f1)) {
-        fscanf(f1, "%d", &a);
+    while(fscanf(f1, "%d", &a) == 1) {
         if (a % 2 == 0) {
             fprintf(f2, "%d", a);
             fprintf(f2, "%s", "\n");

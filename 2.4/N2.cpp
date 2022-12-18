@@ -12,14 +12,11 @@ int main()
 
     if ((f = fopen("f2.txt", "r")) == NULL) {
         cout << "Ошибка открытия файла";
-        cout << f;
         return 0;
     }
 
-    while (!feof(f)) {
-        fscanf(f, "%d", &y);
+    while (fscanf(f, "%d", &y) == 1)
         a+=y;
-    }
 
     fclose(f);
 
